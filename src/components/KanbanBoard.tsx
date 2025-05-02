@@ -135,16 +135,18 @@ export function KanbanBoard() {
   };
 
   return (
-    <div className="p-6 h-full">
-      <div className="flex justify-between items-center mb-6">
-        <h1 className="text-2xl font-bold">Task Manager Kanban Board</h1>
+    <div className="p-3 sm:p-6 h-full">
+      <div className="flex flex-col sm:flex-row sm:justify-between sm:items-center mb-4 sm:mb-6 gap-3">
+        <h1 className="text-xl sm:text-2xl font-bold">
+          Task Manager Kanban Board
+        </h1>
         <Dialog>
           <DialogTrigger asChild>
-            <button className="px-4 py-2 bg-primary text-primary-foreground rounded-md hover:bg-primary/90">
+            <button className="w-full sm:w-auto px-4 py-2 bg-primary text-primary-foreground rounded-md hover:bg-primary/90">
               Add Task
             </button>
           </DialogTrigger>
-          <DialogContent className="sm:max-w-md">
+          <DialogContent className="sm:max-w-md max-w-[95vw] w-full">
             <h2 className="text-xl font-semibold mb-4">Add New Task</h2>
             <TaskForm onSubmit={handleAddTask} />
           </DialogContent>
@@ -168,7 +170,7 @@ export function KanbanBoard() {
           onDragOver={handleDragOver}
           onDragEnd={handleDragEnd}
         >
-          <div className="flex space-x-4 overflow-x-auto pb-4">
+          <div className="flex flex-col md:flex-row md:space-x-4 space-y-4 md:space-y-0 overflow-x-auto pb-4">
             <SortableContext items={COLUMNS.map((col) => col.id)}>
               {COLUMNS.map((column) => (
                 <TaskColumn

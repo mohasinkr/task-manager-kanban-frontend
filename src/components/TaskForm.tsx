@@ -85,15 +85,15 @@ export function TaskForm({ onSubmit }: TaskFormProps) {
         </Select>
       </div>
 
-      <div className="flex justify-end space-x-2">
-        <DialogClose className="px-4 py-2 border border-input rounded-md hover:bg-secondary">
+      <div className="flex flex-col sm:flex-row justify-end gap-2 sm:space-x-2">
+        <DialogClose className="px-4 py-2 border border-input rounded-md hover:bg-secondary w-full sm:w-auto">
           Cancel
         </DialogClose>
         <DialogClose asChild>
           <button
             type="submit"
             onClick={handleSubmit}
-            className="px-4 py-2 bg-primary text-primary-foreground rounded-md hover:bg-primary/90"
+            className="px-4 py-2 bg-primary text-primary-foreground rounded-md hover:bg-primary/90 w-full sm:w-auto"
           >
             Add Task
           </button>

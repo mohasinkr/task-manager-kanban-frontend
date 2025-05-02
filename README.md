@@ -16,7 +16,7 @@ A modern Kanban task board application built with React, TypeScript, and Vite. T
 - **Task Management**: Create, view, and organize tasks
 - **Drag & Drop**: Intuitive drag and drop interface for moving tasks between columns
 - **Status Tracking**: Visual representation of task progress across three states
-- **Responsive Design**: Works on desktop and mobile devices
+- **Responsive Design**: Fully responsive layout that works seamlessly on desktop, tablet, and mobile devices
 - **Mock API**: Simulated backend with MSW for development and production
 
 ## Installation Instructions
@@ -101,6 +101,15 @@ The drag and drop functionality is implemented using @dnd-kit:
 - Tasks can be dragged between columns
 - When a task is dropped in a new column, its status is updated via the API
 - The UI updates immediately for a responsive feel
+
+### Responsive Design
+
+The application is fully responsive and works well on all device sizes:
+
+- **Mobile**: Columns stack vertically for easy scrolling on small screens
+- **Tablet**: Adapts layout for medium-sized screens
+- **Desktop**: Full horizontal layout with multiple columns visible
+- **Touch-friendly**: Optimized for touch interactions on mobile devices
 
 ## Mock API Configuration
 

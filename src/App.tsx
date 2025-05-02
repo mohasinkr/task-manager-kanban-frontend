@@ -48,9 +48,11 @@ function App() {
     <div className="min-h-screen bg-background text-foreground">
       {/* Optional: Show a banner when mocks are enabled */}
       {mockStatus.enabled && (
-        <div className="bg-primary/10 text-primary text-center py-1 text-sm">
+        <div className="bg-primary/10 text-primary text-center py-1 text-xs sm:text-sm px-2">
           Running with mock API{" "}
-          {import.meta.env.PROD ? "(production mode)" : "(development mode)"}
+          <span className="hidden sm:inline">
+            {import.meta.env.PROD ? "(production mode)" : "(development mode)"}
+          </span>
         </div>
       )}
       <KanbanBoard />

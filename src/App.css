@@ -6,8 +6,12 @@
   overflow-x: auto;
 }
 
-html, body, #root {
+html,
+body,
+#root {
   height: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
 }
 
 /* Scrollbar styling */
@@ -28,4 +32,21 @@ html, body, #root {
 
 ::-webkit-scrollbar-thumb:hover {
   background: rgba(0, 0, 0, 0.3);
+}
+
+/* Mobile responsive styles */
+@media (max-width: 768px) {
+  /* Improve touch targets on mobile */
+  button,
+  [role="button"],
+  input,
+  select,
+  textarea {
+    font-size: 16px; /* Prevents iOS zoom on focus */
+  }
+
+  /* Prevent horizontal overflow */
+  .overflow-x-auto {
+    -webkit-overflow-scrolling: touch;
+  }
 }
