@@ -2,15 +2,6 @@
 
 A modern Kanban task board application built with React, TypeScript, and Vite. This application allows you to manage tasks by dragging and dropping them between different status columns (To Do, In Progress, Done).
 
-## Table of Contents
-
-- [Features](#features)
-- [Installation Instructions](#installation-instructions)
-- [Architecture & Approach](#architecture--approach)
-- [Mock API Configuration](#mock-api-configuration)
-- [Self-Evaluation](#self-evaluation)
-- [Technology Stack](#technology-stack)
-
 ## Features
 
 - **Task Management**: Create, view, and organize tasks
